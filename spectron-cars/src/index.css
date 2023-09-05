@@ -1,5 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.top-part {
+  background-color: red;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.header-main {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-main .header-left {
+  display: flex;
+  gap: 5px;
+
+}
+
+.header-main .header-right {
+  /* display: flex; */
+
+}
+
+.header-main .header-right .header-icons {}
+
+
+
+
+.nav-main {
+  background-color: blue;
 }

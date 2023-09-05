@@ -6,13 +6,10 @@ import Header from "./Components/header";
 function App() {
   return (
     <div className="app-main">
-      <Header />
-      <FontAwesomeIcon icon="coffee" />
-      <FontAwesomeIcon icon="fa-solid fa-filter" />
-      kdscdsjncdslj
-      <FontAwesomeIcon icon="fa-solid fa-gears" />
-      lsnclsak
-      <Nav />
+      <div className="top-part">
+        <Header />
+        <Nav />
+      </div>
 
     </div>
   );
