@@ -5,30 +5,43 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  text-transform: capitalize;
+}
+
+body {
+  background-color: aliceblue;
 }
 
 .top-part {
-  background-color: red;
   background-image: url("images/background.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
+  padding: 0 50px;
+  color: white;
+
 }
 
 .header-main {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: solid white 1px;
+
 }
 
 .header-main .header-left {
   display: flex;
-  gap: 5px;
-
 }
 
-.header-main .header-right {
-  /* display: flex; */
+.header-main .header-left p {
+  margin-inline-start: 10px;
+}
+
+.header-main .header-right>* {
+  margin-inline-end: 10px;
 
 }
 
@@ -38,5 +51,119 @@
 
 
 .nav-main {
-  background-color: blue;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.8rem;
+
+}
+
+.nav-main .nav-right {
+  display: flex;
+
+}
+
+.nav-main .nav-right .nav-add-listing,
+.ham-menu {
+  margin-inline-end: 10px;
+}
+
+.nav-main .nav-right .nav-add-listing {
+  margin-inline-start: 10px;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+
+}
+
+.nav-main .nav-right .nav-ul {
+  display: flex;
+  font-size: 1.1rem;
+  list-style: none;
+  gap: 30px;
+  margin-top: 7.5px;
+  margin-right: 50px;
+
+}
+
+/* ///////////////////////// */
+.nav-main .nav-left {
+  display: flex;
+}
+
+.nav-main .nav-left #logo {}
+
+.nav-main .nav-left #name {
+  font-size: 2.2rem;
+  padding-left: 120px;
+  font-weight: 300;
+}
+
+
+/* ////////////////////////////// */
+
+
+.body-main {
+  margin-top: 20vh;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body-main #main-text {
+  font-size: 3.2rem;
+  margin-bottom: 3vh;
+  font-weight: 500;
+
+}
+
+.body-main #sub-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+
+/* ////////////////////////////////////////////////////// */
+
+.cartopology-main {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.cards-main {
+  /* background-color: aqua; */
+}
+
+.cards-main .container {
+  /* background-color: red; */
+  width: 240px;
+  aspect-ratio: 1.2;
+  /* margin: 50px auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cards-main .container img {
+  width: 200px;
+  height: 80px;
+  transition: transform .5s;
+  /* background-color: blueviolet; */
+}
+
+.cards-main .container img:hover {
+  transform: scale(1.1);
+}
+
+
+.cards-main .container p {
+  margin-top: 25px;
 }

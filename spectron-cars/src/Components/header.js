@@ -10,10 +10,8 @@ export default function Header() {
     return (
         <div className="header-main">
             <div className="header-left">
-                <FontAwesomeIcon icon="fa-solid fa-phone" />
-                <p>1-800-458--5689</p>
-                <FontAwesomeIcon icon="fa-solid fa-map" />
-                <p>tunis street </p>
+                <p><span><FontAwesomeIcon icon="fa-solid fa-phone" /></span>1-800-458--5689</p>
+                <p><span><FontAwesomeIcon icon="fa-solid fa-map" /></span>tunis street </p>
                 {/* <p>Curuent day</p> */}
             </div>
             <div className="header-right">
