@@ -4,9 +4,9 @@ import car from '../../images/footer-part/1.png';
 export default function SendUsMessage() {
     return (
         <div className="send-us-main">
-            <h1 className="heading">Send Us Message</h1>
             <div className="container">
                 <div className="left">
+                    <h1 className="heading">Send Us Message</h1>
                     <div className="left-inputs">
                         <input id="name" type="text" placeholder="Name" name="name" />
                         <input id="phone" type="tel" placeholder="Phone" name="phonenumber" />
@@ -21,7 +21,7 @@ export default function SendUsMessage() {
                             <option>Collaboration Proposal</option>
                             <option>Other</option>
                         </select>
-                        <input id="message" type="text" placeholder="Message" name="massage" />
+                        <textarea name="message" id="message" placeholder="message" cols="30" rows="10"></textarea>
                     </div>
                     <button type="submit" id="submit-btn">Send Message</button>
                 </div>

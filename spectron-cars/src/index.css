@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
 }
 
@@ -369,25 +369,28 @@ body {
 
 .send-us-main .heading {
   text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
+  font-weight: 300;
 }
 
 .send-us-main .container {
-  /* background-color: #eb6245; */
-  width: 100%;
+
   height: 100%;
   display: flex;
+  justify-content: center;
   padding: 100px;
 
 }
 
 .send-us-main .container .left {
-  background-color: violet;
+  /* background-color: violet; */
   width: 50%;
 
 }
 
 .send-us-main .container .left .left-inputs {
-  background-color: yellow;
+  /* background-color: yellow; */
   margin-top: 120px;
   display: flex;
   flex-wrap: wrap;
@@ -398,26 +401,47 @@ body {
   flex: 1 1 40%;
   color: white;
   width: 100%;
-  height: 70px;
+  height: 60px;
   font-size: 15px;
   font-weight: 400;
+  padding: 10px;
   /* background-color: #2e486e; */
-  background-color: rgba(9, 39, 65, 0.7);
+  background-color: rgba(15, 64, 106, 0.5);
   border-radius: 10px;
 }
 
 
 .send-us-main .container .left .left-inputs input {}
 
-.send-us-main .container .left .left-inputs select {}
-
-
-.send-us-main .container .left #submit-btn {}
-
-
-.send-us-main .container .right {
-  background-color: rebeccapurple;
-  width: fit-content;
+.send-us-main .container .left .left-inputs select {
+  color: lightgray;
+  font-weight: 300;
 }
 
-.send-us-main .container .right .side-img {}
+
+.send-us-main .container .left #submit-btn {
+  height: 60px;
+  background-color: #ed5217;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 20px;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.send-us-main .container .left #submit-btn:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.send-us-main .container .right {
+  /* background-color: rebeccapurple; */
+}
+
+.send-us-main .container .right .side-img {
+  margin-top: 150px;
+  margin-left: 50px;
+  width: 32rem;
+}
