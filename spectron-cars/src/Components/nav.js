@@ -25,7 +25,7 @@ export default function Nav() {
                     <li className="nav-li">pages</li>
                 </ul>
                 <button className="nav-add-listing"> + Add listing</button>
-                <button className="ham-menu">ham</button>
+                <button className="ham-menu"><FontAwesomeIcon icon="fa-solid fa-bars" /></button>
             </div>
         </div>
     );

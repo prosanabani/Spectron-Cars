@@ -9,13 +9,13 @@ import PopularListing from "./Components/body-parts/popularListing";
 function App() {
   return (
     <div className="app-main">
-      {/* <div className="top-part">
+      <div className="top-part">
         <Header />
         <Nav />
         <Body />
-      </div> */}
+      </div>
       <div className="body-part">
-        {/* <CarTopology /> */}
+        <CarTopology />
         <PopularListing />
 
       </div>
