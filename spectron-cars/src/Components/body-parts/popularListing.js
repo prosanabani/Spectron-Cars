@@ -1,10 +1,7 @@
 import React from "react";
 import '../../index.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import car_1 from '../../images/popular-listing/pop-car-1.jpg';
-import car_2 from '../../images/popular-listing/pop-car-2.jpg';
-import car_3 from '../../images/popular-listing/pop-car-3.jpg';
-import car_4 from '../../images/popular-listing/pop-car-4.jpg';
+import popListingData from "./pop-listing-data";
 
 function Cards(props) {
     return (
@@ -55,50 +52,18 @@ function Cards(props) {
     )
 }
 export default function PopularListing() {
+    const Dynamic_card = popListingData.map(items =>
+        <Cards
+            {...items}
+        />
+    )
+
+
     return (
         <div className="popular-main">
             <h1 className="heading">Popular Listings</h1>
             <div className="card-container">
-                <Cards
-                    img={car_1}
-                    price="200"
-                    name="Volvo XC90 - 2023"
-                    rating="3.4"
-                    reviews="541"
-                    milage="4523"
-                    transmission="Automatic"
-                    fuel="Diesel"
-                />
-                <Cards
-                    img={car_2}
-                    price="560"
-                    name="Mercedes-Benz S 560 - 2021"
-                    rating="4.8"
-                    reviews="846"
-                    milage="6531"
-                    transmission="Manual"
-                    fuel="Gasoline"
-                />
-                <Cards
-                    img={car_3}
-                    price="850"
-                    name="BMW M8 Gran - 2023"
-                    rating="3.9"
-                    reviews="645"
-                    milage="4123"
-                    transmission="Manual"
-                    fuel="Gasoline"
-                />
-                <Cards
-                    img={car_4}
-                    price="470"
-                    name="Nissan Qasqai - Sky Pack"
-                    rating="4.8"
-                    reviews="613"
-                    milage="5526"
-                    transmission="Automatic"
-                    fuel="Diesel"
-                />
+                {Dynamic_card}
 
 
             </div>

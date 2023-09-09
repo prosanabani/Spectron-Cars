@@ -11,6 +11,14 @@
 /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 
 
+/* .triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+} */
+
 body {
   background-color: aliceblue;
 }
@@ -55,6 +63,20 @@ body {
 
 .header-main .header-right .header-icons {}
 
+.header-main .header-right .login,
+.register {
+  color: white;
+  border-radius: 10px;
+  padding: 1px 7px;
+  background-color: transparent;
+  font-size: 12px;
+  border-color: #40df9f;
+}
+
+.header-main .header-right .login {}
+
+.header-main .header-right .register {}
+
 
 
 
@@ -75,11 +97,13 @@ body {
 .nav-main .nav-right .nav-add-listing,
 .ham-menu {
   margin-inline-end: 10px;
+
 }
 
 .nav-main .nav-right .nav-add-listing {
   margin-inline-start: 10px;
   background-color: transparent;
+  border-color: #40df9f;
   border-radius: 20px;
   padding: 10px;
   color: white;
@@ -288,7 +312,6 @@ body {
   margin-top: 20px;
   margin-left: 15px;
   height: 100px;
-  border-bottom: solid rgb(78, 78, 78) 2px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -322,9 +345,10 @@ body {
   font-weight: 200;
 }
 
-
 .pop-card-main .container .lower {
   padding-top: 10px;
+  margin-top: 10px;
+  border-top: solid rgb(78, 78, 78) 1px;
   /* background-color: seagreen; */
   color: rgb(78, 78, 78);
   font-weight: 200;
@@ -445,3 +469,46 @@ body {
   margin-left: 50px;
   width: 32rem;
 }
+
+/* ///////////////////////////////////////////////////////////////// */
+.team-main {
+  background-color: violet;
+  color: white;
+}
+
+.team-main .subheading {
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+}
+
+.team-main .heading {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+
+
+
+.teamcards-main {}
+
+.teamcards-main {}
+
+.teamcards-main .container {}
+
+.teamcards-main .container .right-divs {}
+
+.teamcards-main .container .right-divs .r-d-1 {}
+
+.teamcards-main .container .right-divs .r-d-2 {}
+
+.teamcards-main .container .left-divs {}
+
+.teamcards-main .container .left-divs .l-d-1 {}
+
+.teamcards-main .container .left-divs .l-d-2 {}
+
+.teamcards-main .container .member-name {}
+
+.teamcards-main .container .member-name {}

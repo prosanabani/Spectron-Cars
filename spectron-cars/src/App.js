@@ -6,6 +6,7 @@ import Body from "./Components/body";
 import CarTopology from "./Components/body-parts/carTopoloy";
 import PopularListing from "./Components/body-parts/popularListing";
 import SendUsMessage from "./Components/footer-part/SendUsMessage";
+import OurAwesomTeam from "./Components/body-parts/OurAwesomeTeam";
 
 function App() {
   return (
@@ -14,14 +15,15 @@ function App() {
         <Header />
         <Nav />
         <Body />
-      </div> */}
-      {/* <div className="body-part">
+      </div>
+      <div className="body-part">
         <CarTopology />
         <PopularListing />
-      </div> */}
+      </div>
       <div className="footer-part">
         <SendUsMessage />
-      </div>
+      </div> */}
+      <OurAwesomTeam />
     </div>
   );
 }
