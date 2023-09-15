@@ -21,10 +21,10 @@ function TeamCards(props) {
                     <div className="pop-up-div">
                         <p className="member-name">{props.name}</p>
                         <div className="mem-link-div">
-                            <FontAwesomeIcon className="member-links" icon="fa-brands fa-github" />
-                            <FontAwesomeIcon className="member-links" icon="fa-brands fa-facebook-f" />
-                            <FontAwesomeIcon className="member-links" icon="fa-brands fa-instagram" />
-                            <FontAwesomeIcon className="member-links" icon="fa-brands fa-linkedin-in" />
+                            <FontAwesomeIcon id="member-links" icon="fa-brands fa-github" />
+                            <FontAwesomeIcon id="member-links" icon="fa-brands fa-facebook-f" />
+                            <FontAwesomeIcon id="member-links" icon="fa-brands fa-instagram" />
+                            <FontAwesomeIcon id="member-links" icon="fa-brands fa-linkedin-in" />
                         </div>
                     </div>
                 </div>
