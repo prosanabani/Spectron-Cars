@@ -44,7 +44,7 @@ export default function OurAwesomTeam() {
     )
     return (
         <div className="team-main">
-            <h5 className="subheading">Meet our Expoert team</h5>
+            <h5 className="subheading">Meet our Expert team</h5>
             <h1 className="heading">Our Awesome Team</h1>
             <div className="card-container">
                 {Cards}

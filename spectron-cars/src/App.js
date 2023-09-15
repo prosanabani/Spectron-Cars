@@ -11,7 +11,7 @@ import OurAwesomTeam from "./Components/body-parts/OurAwesomeTeam";
 function App() {
   return (
     <div className="app-main">
-      {/* <div className="top-part">
+      <div className="top-part">
         <Header />
         <Nav />
         <Body />
@@ -22,8 +22,8 @@ function App() {
       </div>
       <div className="footer-part">
         <SendUsMessage />
-      </div> */}
-      <OurAwesomTeam />
+        <OurAwesomTeam />
+      </div>
     </div>
   );
 }
