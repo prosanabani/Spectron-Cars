@@ -64,8 +64,6 @@ export default function PopularListing() {
             <h1 className="heading">Popular Listings</h1>
             <div className="card-container">
                 {Dynamic_card}
-
-
             </div>
 
         </div>
