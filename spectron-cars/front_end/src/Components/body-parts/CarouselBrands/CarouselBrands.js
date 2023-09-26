@@ -9,7 +9,7 @@ export default function CarouselBrands() {
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 5,
+            items: 6,
             slidesToSlide: 1 // optional, default to 1.
         },
         tablet: {
@@ -33,7 +33,7 @@ export default function CarouselBrands() {
         <div className="CarouselBrands-main">
             <Carousel
                 draggable={false}
-                showDots={true}
+                showDots={false}
                 itemClass="ahmed"
                 containerClass="Carousel_container"
                 responsive={responsive}
