@@ -12,7 +12,7 @@ import CarouselBrands from "./Components/body-parts/CarouselBrands/CarouselBrand
 function App() {
   return (
     <div className="app-main">
-      {/* <div className="top-part">
+      <div className="top-part">
         <Header />
         <Nav />
         <Body />
@@ -24,7 +24,7 @@ function App() {
       <div className="footer-part">
         <SendUsMessage />
         <OurAwesomTeam />
-      </div> */}
+      </div>
       <CarouselBrands />
     </div>
   );
