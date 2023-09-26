@@ -440,7 +440,7 @@ body {
 
 }
 
-.send-us-main .container .left .left-inputs {
+.send-us-main .container .left .left-inputs #send_us_from {
   /* background-color: yellow; */
   margin-top: 120px;
   display: flex;
@@ -448,7 +448,7 @@ body {
   gap: 20px;
 }
 
-.send-us-main .container .left .left-inputs>* {
+.send-us-main .container .left .left-inputs #send_us_from>* {
   flex: 1 1 40%;
   color: white;
   width: 100%;
@@ -462,9 +462,9 @@ body {
 }
 
 
-.send-us-main .container .left .left-inputs input {}
+.send-us-main .container .left .left-inputs #send_us_from input {}
 
-.send-us-main .container .left .left-inputs select {
+.send-us-main .container .left .left-inputs #send_us_from select {
   color: lightgray;
   font-weight: 300;
 }
