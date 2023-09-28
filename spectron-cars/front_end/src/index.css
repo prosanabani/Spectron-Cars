@@ -464,29 +464,32 @@ body {
 
 .send-us-main .container .left .left-inputs #send_us_from input {}
 
+
 .send-us-main .container .left .left-inputs #send_us_from select {
   color: lightgray;
   font-weight: 300;
 }
 
 
-.send-us-main .container .left #submit-btn {
+
+.send-us-main .container .left .left-inputs #send_us_from #submit-btn {
   height: 60px;
   background-color: #ed5217;
   border: none;
   border-radius: 10px;
   font-size: 15px;
   font-weight: 400;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 20px;
   transition: 0.5s;
 }
 
-.send-us-main .container .left #submit-btn:hover {
-  color: white;
+.send-us-main .container .left .left-inputs #send_us_from #submit-btn:hover {
+  color: #ed5217;
+  background-color: white;
   cursor: pointer;
 }
-
+/* //////////////////////////////////////////// */
 .send-us-main .container .right {
   /* background-color: rebeccapurple; */
 }
