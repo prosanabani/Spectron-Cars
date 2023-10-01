@@ -3,6 +3,8 @@ import { useState , useRef } from "react";
 import car from '../../images/footer-part/1.png';
 import * as emailjs from "emailjs-com";
 export default function SendUsMessage() {
+    // document.write("<p>Hi there!</p>");  
+
 
     function PopupDiv() {
         return `<h1>sskacjnsn</h1>`
@@ -16,10 +18,13 @@ export default function SendUsMessage() {
             (response) => {
                 // Success!
                 console.log('Email sent successfully!');
+                window.alert('Email sent successfully!');
+                
             },
             (error) => {
                 // Error!
                 console.log('Error sending email:', error);
+                window.alert('Error sending email:', error);   
             }
         );
     }
