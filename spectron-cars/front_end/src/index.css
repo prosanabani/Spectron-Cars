@@ -118,7 +118,10 @@ body {
   margin-top: 7.5px;
   margin-right: 50px;
 }
-
+.nav-main .nav-right .nav-ul .nav-li{
+  color: white;
+  text-decoration: none;
+}
 .nav-main .nav-right .ham-menu {
   background-color: transparent;
   border: none;

@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '../fontawesome';
-
+import { Link } from "react-router-dom";
 
 
 export default function Nav() {
@@ -17,12 +17,12 @@ export default function Nav() {
             </div>
             <div className="nav-right">
                 <ul className="nav-ul">
-                    <li className="nav-li">Home</li>
-                    <li className="nav-li">Explore</li>
-                    <li className="nav-li">Listing</li>
-                    <li className="nav-li">blog</li>
-                    <li className="nav-li">Shop</li>
-                    <li className="nav-li">pages</li>
+                <Link className="nav-li" to ="/">Home</Link> 
+                <Link className="nav-li" to ="/explore">Explore</Link>
+                <Link className="nav-li" to ="/listing">Listing</Link> 
+                <Link className="nav-li" to ="/blog">Blog</Link>
+                <Link className="nav-li" to ="/shop">Shop</Link> 
+                <Link className="nav-li" to ="/pages">Pages</Link>
                 </ul>
                 <button className="nav-add-listing"> + Add listing</button>
                 <button className="ham-menu"><FontAwesomeIcon icon="fa-solid fa-bars" /></button>
