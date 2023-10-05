@@ -1,10 +1,10 @@
 import React from "react";
 import '../../index.css';
-import Compact from '../../images/1.png';
-import Sedan from '../../images/2.png';
-import SUV from '../../images/3.png';
-import Convertible from '../../images/4.png';
-import Coupe from '../../images/5.png';
+import Compact from '../../images/body-parts/car-topology/1.png';
+import Sedan from '../../images/body-parts/car-topology/2.png';
+import SUV from '../../images/body-parts/car-topology/3.png';
+import Convertible from '../../images/body-parts/car-topology/4.png';
+import Coupe from '../../images/body-parts/car-topology/5.png';
 
 
 function Cards({ img, type }) {

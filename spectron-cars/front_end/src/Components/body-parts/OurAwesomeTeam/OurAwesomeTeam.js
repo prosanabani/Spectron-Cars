@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import data from '../body-parts/OurAwesomeTeam-data';
+import data from './OurAwesomeTeam-data';
 
 
 function TeamCards(props) {

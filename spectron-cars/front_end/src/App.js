@@ -3,16 +3,16 @@ import { FontAwesomeIcon } from './fontawesome';
 // 
 
 import { Routes ,Route ,Link } from "react-router-dom";
-import Nav from "./Components/nav";
-import Header from "./Components/header";
-import Body from "./Components/body";
-import CarTopology from "./Components/body-parts/carTopoloy";
+import Nav from "./Components/static-parts/nav";
+import Header from "./Components/static-parts/header";
+import Body from "./Components/body-parts/body";
+import CarTopology from "./Components/body-parts/CarTopoloy";
 import PopularListing from "./Components/body-parts/popularListing";
-import SendUsMessage from "./Components/footer-part/SendUsMessage";
-import OurAwesomTeam from "./Components/body-parts/OurAwesomeTeam";
+import SendUsMessage from "./Components/body-parts/SendUsMessage";
+import OurAwesomTeam from "./Components/body-parts/OurAwesomeTeam/OurAwesomeTeam";
 import CarouselBrands from "./Components/body-parts/CarouselBrands/CarouselBrands";
-import Temp from "./Components/footer-part/services-temp";
-import ScrollToTop from "./Components/scrolltotop";
+import Temp from "./Components/footer-parts/services-temp";
+import ScrollToTop from "./Components/static-parts/scrolltotop";
 
 function App() {
 
@@ -37,13 +37,13 @@ function App() {
         {/* <Body /> */}
       </div>
       <div className="body-part">
-        {/* <CarTopology /> */}
-        {/* <PopularListing /> */}
+        <CarTopology />
+        <PopularListing />
       </div>
       <div className="footer-part">
-        {/* <SendUsMessage /> */}
+        <SendUsMessage />
         {/* <Temp/> */}
-        {/* <OurAwesomTeam /> */}
+        <OurAwesomTeam />
       </div>
       
    

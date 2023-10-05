@@ -1,5 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from '../fontawesome';
+import { FontAwesomeIcon } from '../../fontawesome';
 
 
 export default function Header() {

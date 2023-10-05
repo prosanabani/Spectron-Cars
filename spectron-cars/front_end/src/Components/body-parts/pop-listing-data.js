@@ -1,6 +1,6 @@
 export default [
     {
-        img: require('../../images/popular-listing/pop-car-1.jpg'),
+        img: require('../../images/body-parts/popular-listing/pop-car-1.jpg'),
         price: "200",
         name: "Volvo XC90 - 2023",
         rating: "3.4",
@@ -10,7 +10,7 @@ export default [
         fuel: "Diesel",
     },
     {
-        img: require('../../images/popular-listing/pop-car-2.jpg'),
+        img: require('../../images/body-parts/popular-listing/pop-car-2.jpg'),
         price: "560",
         name: "Mercedes-Benz S 560 - 2021",
         rating: "4.8",
@@ -20,7 +20,7 @@ export default [
         fuel: "Gasoline",
     },
     {
-        img: require('../../images/popular-listing/pop-car-3.jpg'),
+        img: require('../../images/body-parts/popular-listing/pop-car-3.jpg'),
         price: "850",
         name: "BMW M8 Gran - 2023",
         rating: "3.9",
@@ -30,7 +30,7 @@ export default [
         fuel: "Gasoline",
     },
     {
-        img: require('../../images/popular-listing/pop-car-4.jpg'),
+        img: require('../../images/body-parts/popular-listing/pop-car-4.jpg'),
         price: "470",
         name: "Nissan Qasqai - Sky Pack",
         rating: "4.8",

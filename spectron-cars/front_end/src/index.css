@@ -24,7 +24,7 @@ body {
 }
 
 .top-part {
-  background-image: url("images/background.jpg");
+  background-image: url("images/static-parts/background.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -214,7 +214,7 @@ body {
 
 /* ///////////////////////////////////////////// */
 .popular-main {
-  background-image: url(../src/images/popular-listing/popular-listing.png);
+  background-image: url(images/body-parts/popular-listing/popular-listing.png);
 }
 
 .popular-main .heading {
@@ -389,7 +389,7 @@ body {
 
 .send-us-main {
   z-index: 1;
-  background-image: url(images/footer-part/send-us-background.jpg);
+  background-image: url(images/body-parts/SendUsMessage/send-us-background.jpg);
   background-position: center;
   background-size: cover;
   position: relative;

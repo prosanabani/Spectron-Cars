@@ -1,6 +1,6 @@
 import React from "react";
 import { useState , useRef } from "react";
-import car from '../../images/footer-part/1.png';
+import car from '../../images/body-parts/SendUsMessage/1.png';
 import * as emailjs from "emailjs-com";
 export default function SendUsMessage() {
     // document.write("<p>Hi there!</p>");  
