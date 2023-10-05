@@ -1,15 +1,12 @@
 import React from "react";
-import { FontAwesomeIcon } from '../../fontawesome';
+import { FontAwesomeIcon } from '../../../fontawesome';
 import { Link } from "react-router-dom";
-
-
 export default function Nav() {
 
 
 
     ////////////////////////////////////////////
     return (
-
         <div className="nav-main">
             <div className="nav-left">
                 <img id="logo" src="" alt="" />

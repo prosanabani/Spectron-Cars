@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
 const ScrollToTop = () => {
     const [showButton, setShowButton] = useState(false);
 
@@ -25,7 +23,6 @@ const ScrollToTop = () => {
             style={{ display: showButton ? 'block' : 'none' }}
             onClick={scrollToTop}
         >
-
             <FontAwesomeIcon icon="fa-solid fa-arrow-up" />
         </button>
     );
