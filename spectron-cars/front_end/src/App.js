@@ -9,23 +9,28 @@ import Temp from "./Components/footer-parts/services-temp";
 import ScrollToTop from "./Components/static-parts/scrolltotop";
 import TopPart from "./Components/static-parts/top-part/topPart";
 import Home from "./Components/Pages/home";
+import SendUsMessage from "./Components/body-parts/SendUsMessage";
+import Margin from "./Components/static-parts/margin";
+import OurAwesomTeam from "./Components/body-parts/OurAwesomeTeam/OurAwesomeTeam";
+import Footer from "./Components/footer-parts/footer/footer";
 
 function App() {
   return (
     <div className="app-main">
       <TopPart />
-
+      <Margin />
       <ScrollToTop />
       {/* <Temp/> */}
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/explore" element={ <CarTopology /> }/>   */}
-        {/* <Route path="/listing" element={ <Body /> }/> */}
-        {/* <Route path="/blog" element={ <CarTopology /> }/>   */}
+        <Route path="/message-us" element={<SendUsMessage />} />
+        <Route path="/team" element={<OurAwesomTeam />} />
+        {/* <Route path="/explore" element={<Footer />} /> */}
         {/* <Route path="/pages" element={ <Body /> }/> */}
         {/* <Route path="/" element={ <CarTopology /> }/>   */}
       </Routes>
       {/* <CarouselBrands /> */}
+      <Footer />
     </div>
   );
 }

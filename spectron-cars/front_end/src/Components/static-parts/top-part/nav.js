@@ -23,11 +23,11 @@ export default function Nav() {
           <NavLink className="nav-li" to="/blog">
             Blog
           </NavLink>
-          <NavLink className="nav-li" to="/shop">
-            Shop
+          <NavLink className="nav-li" to="/message-us">
+            Send Us Message
           </NavLink>
-          <NavLink className="nav-li" to="/pages">
-            Pages
+          <NavLink className="nav-li" to="/team">
+            Team
           </NavLink>
         </ul>
         <button className="nav-add-listing"> + Add listing</button>
