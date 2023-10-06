@@ -45,7 +45,12 @@ export default function Footer() {
             </div>
             <div className="need_help">
               <h3 className="header_in_top">Need help</h3>
-              +1 670 936 46 70 hello@voiture.com
+              <pre>
+                +1 670 936 46 70 <br />
+                <a id="help_page_link" href="#">
+                  help@spectron.com
+                </a>
+              </pre>
             </div>
             <div className="opening_hours">
               <h3 className="header_in_top">OPENING HOURS</h3>

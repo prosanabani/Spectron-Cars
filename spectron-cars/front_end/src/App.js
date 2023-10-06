@@ -13,6 +13,7 @@ import SendUsMessage from "./Components/body-parts/SendUsMessage";
 import Margin from "./Components/static-parts/margin";
 import OurAwesomTeam from "./Components/body-parts/OurAwesomeTeam/OurAwesomeTeam";
 import Footer from "./Components/footer-parts/footer/footer";
+import Help from "./Components/Pages/help";
 
 function App() {
   return (
@@ -25,11 +26,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/message-us" element={<SendUsMessage />} />
         <Route path="/team" element={<OurAwesomTeam />} />
-        {/* <Route path="/explore" element={<Footer />} /> */}
+        <Route path="/listing" element={<Help />} />
         {/* <Route path="/pages" element={ <Body /> }/> */}
         {/* <Route path="/" element={ <CarTopology /> }/>   */}
       </Routes>
-      {/* <CarouselBrands /> */}
+      <CarouselBrands />
       <Footer />
     </div>
   );
