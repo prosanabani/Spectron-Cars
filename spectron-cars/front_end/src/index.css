@@ -908,5 +908,17 @@ body {
 }
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 .help_main {
+  background-color: #092741;
+}
+.help_main .help_cards_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* flex: 0 1 30%; */
+  gap: 20px;
+}
+.help_main .help_cards_container .help_cards {
+  background-color: #40df9f;
+  max-width: 45ch;
 }
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */

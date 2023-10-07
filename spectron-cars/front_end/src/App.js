@@ -13,11 +13,13 @@ import SendUsMessage from "./Components/body-parts/SendUsMessage";
 import Margin from "./Components/static-parts/margin";
 import OurAwesomTeam from "./Components/body-parts/OurAwesomeTeam/OurAwesomeTeam";
 import Footer from "./Components/footer-parts/footer/footer";
-import Help from "./Components/Pages/help";
+import Help from "./Components/Pages/help-page/help";
+import CarTopology from "./Components/body-parts/CarTopoloy";
 
 function App() {
   return (
     <div className="app-main">
+      {/* <Help /> */}
       <TopPart />
       <Margin />
       <ScrollToTop />
@@ -26,9 +28,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/message-us" element={<SendUsMessage />} />
         <Route path="/team" element={<OurAwesomTeam />} />
-        <Route path="/help" element={<Help />} />
-        {/* <Route path="/pages" element={ <Body /> }/> */}
-        {/* <Route path="/" element={ <CarTopology /> }/>   */}
+        {/* <Route path="/help" element={<Help />} /> */}
+        {/* <Route path="/pages" element={<Body />} /> */}
+        {/* <Route path="/" element={<CarTopology />} /> */}
       </Routes>
       <CarouselBrands />
       <Footer />
