@@ -26,7 +26,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/message-us" element={<SendUsMessage />} />
         <Route path="/team" element={<OurAwesomTeam />} />
-        <Route path="/listing" element={<Help />} />
+        <Route path="/help" element={<Help />} />
         {/* <Route path="/pages" element={ <Body /> }/> */}
         {/* <Route path="/" element={ <CarTopology /> }/>   */}
       </Routes>

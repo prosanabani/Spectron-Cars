@@ -519,7 +519,10 @@ body {
   margin-left: 50px;
   width: 32rem;
 }
-
+/* ///////////////////////////////////////////////// */
+.toast_container {
+  margin-top: 150px;
+}
 /* ///////////////////////////////////////////////////////////////// */
 .team-main {
   /* background-color: violet; */
