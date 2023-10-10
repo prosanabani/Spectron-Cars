@@ -30,7 +30,11 @@ export default function Nav() {
             Team
           </NavLink>
         </ul>
-        <button className="nav-add-listing"> + Add listing</button>
+        <button className="nav-add-listing">
+          <NavLink className="nav-li " to="/request-help">
+            Request Help
+          </NavLink>
+        </button>
         <button className="ham-menu">
           <FontAwesomeIcon icon="fa-solid fa-bars" />
         </button>

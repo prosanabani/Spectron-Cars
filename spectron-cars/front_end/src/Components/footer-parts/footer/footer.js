@@ -16,8 +16,8 @@ export default function Footer() {
               <NavLink className="nav-li" to="/">
                 Home
               </NavLink>
-              <NavLink className="nav-li" to="/explore">
-                Explore
+              <NavLink className="nav-li" to="/help">
+                help
               </NavLink>
               <NavLink className="nav-li" to="/listing">
                 Listing
@@ -30,6 +30,9 @@ export default function Footer() {
               </NavLink>
               <NavLink className="nav-li" to="/team">
                 Team
+              </NavLink>
+              <NavLink className="nav-li" to="/request-help">
+                Request Help
               </NavLink>
             </ul>
           </div>
