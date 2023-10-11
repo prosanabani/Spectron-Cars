@@ -60,11 +60,12 @@ body {
   margin-inline-end: 5px;
 }
 
-.header-main .header-right>* {
+.header-main .header-right > * {
   margin-inline-end: 10px;
 }
 
-.header-main .header-right .header-icons {}
+.header-main .header-right .header-icons {
+}
 
 .header-main .header-right .login,
 .register {
@@ -76,9 +77,11 @@ body {
   border-color: #40df9f;
 }
 
-.header-main .header-right .login {}
+.header-main .header-right .login {
+}
 
-.header-main .header-right .register {}
+.header-main .header-right .register {
+}
 
 /* //////////////////////////////////////// */
 
@@ -150,7 +153,8 @@ body {
   display: flex;
 }
 
-.nav-main .nav-left #logo {}
+.nav-main .nav-left #logo {
+}
 
 .nav-main .nav-left #name {
   font-size: 2.2rem;
@@ -271,7 +275,8 @@ body {
   padding: 50px;
 }
 
-.pop-card-main {}
+.pop-card-main {
+}
 
 .pop-card-main .container {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
@@ -320,7 +325,7 @@ body {
   /* opacity: 100; */
 }
 
-.pop-card-main .container .upper .zoomed-animation span>* {
+.pop-card-main .container .upper .zoomed-animation span > * {
   margin-right: 5px;
   margin-left: 5px;
 }
@@ -361,7 +366,8 @@ body {
   font-size: 14px;
 }
 
-.pop-card-main .container .mid .price {}
+.pop-card-main .container .mid .price {
+}
 
 .pop-card-main .container .mid .carname-model {
   font-size: 17px;
@@ -380,7 +386,8 @@ body {
   margin-right: 10px;
 }
 
-.pop-card-main .container .mid .spans #p-content {}
+.pop-card-main .container .mid .spans #p-content {
+}
 
 .pop-card-main .container .mid .spans #p-content span {
   color: #2e486e;
@@ -400,7 +407,8 @@ body {
   gap: 10px;
 }
 
-.pop-card-main .container .lower span {}
+.pop-card-main .container .lower span {
+}
 
 .pop-card-main .container .lower #lower-icon {
   margin-right: 5px;
@@ -468,7 +476,7 @@ body {
   gap: 20px;
 }
 
-.send-us-main .container .left .left-inputs #send_us_from>* {
+.send-us-main .container .left .left-inputs #send_us_from > * {
   flex: 1 1 40%;
   color: white;
   width: 100%;
@@ -481,7 +489,8 @@ body {
   border-radius: 10px;
 }
 
-.send-us-main .container .left .left-inputs #send_us_from input {}
+.send-us-main .container .left .left-inputs #send_us_from input {
+}
 
 .send-us-main .container .left .left-inputs #send_us_from select {
   color: lightgray;
@@ -562,7 +571,8 @@ body {
 }
 
 /* /////////////////////////////////// */
-.teamcards-main {}
+.teamcards-main {
+}
 
 .teamcards-main .container {
   position: relative;
@@ -686,7 +696,8 @@ body {
   /* background-color: tomato; */
 }
 
-.teamcards-main .container .pop-up-div .member-name {}
+.teamcards-main .container .pop-up-div .member-name {
+}
 
 .teamcards-main .container .pop-up-div .mem-link-div {
   margin-inline-start: 10px;
@@ -695,7 +706,8 @@ body {
   gap: 10px;
 }
 
-.teamcards-main .container .pop-up-div .mem-link-div #member-links {}
+.teamcards-main .container .pop-up-div .mem-link-div #member-links {
+}
 
 #mimoo {
   background-color: white;
@@ -895,14 +907,14 @@ body {
   transition: 1s;
 }
 
-.icon_in_footer>* {
+.icon_in_footer > * {
   background-color: hsla(0, 0%, 100%, 0.07);
   padding: 10px;
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
 }
 
-.icon_in_footer>*:hover {
+.icon_in_footer > *:hover {
   border: 1px solid #59c89b;
   transform: scale(1.2);
 }
@@ -927,15 +939,11 @@ body {
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-
-
-
 /* ///////////requesthelp//////////// */
 
 .containter_in_service {
   background-color: #f9f9f9;
   padding: 50px;
-
 }
 
 .containter_in_service p {
@@ -944,15 +952,11 @@ body {
   margin-bottom: 20px;
 }
 
-
 .containter_in_service .row {
   display: flex;
-
-
 }
 
 .service_form {
-
   width: 80%;
   background-color: white;
   padding: 50px;
@@ -972,15 +976,12 @@ body {
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
-
 }
 
 .fomr_in_service label {
-
   font-size: 15px;
   margin-right: 20px;
   color: #5f6973;
-
 }
 
 /* .service_form .fomr_in_service div {
@@ -999,7 +1000,6 @@ select {
   margin-top: 20px;
   border: 1px solid #59c89b;
   border-radius: 5px;
-
 }
 
 .service_form .fomr_in_service div button {
@@ -1011,14 +1011,11 @@ select {
   cursor: pointer;
   width: 100%;
   margin-top: 13%;
-
-
 }
 
 .service_form .fomr_in_service div {
   /* background-color: red; */
   width: calc(50% - 20px);
-
 }
 
 .opening-hours h3 {
@@ -1042,7 +1039,6 @@ select {
 
 .opening-hours ul {
   list-style: none;
-
 }
 
 /* .opening-hours ul span {
@@ -1052,5 +1048,20 @@ select {
 .opening-hours li {
   margin-bottom: 5px;
   margin-bottom: 10px;
-
 }
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+.fullscreen_image_container {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99999999999999999;
+}
+.fullscreen_image {
+  background-color: #092741;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////// */

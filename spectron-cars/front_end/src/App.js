@@ -16,6 +16,7 @@ import Footer from "./Components/footer-parts/footer/footer";
 import Help from "./Components/Pages/help-page/help";
 import CarTopology from "./Components/body-parts/CarTopoloy";
 import RequestHelp from "./Components/body-parts/requesthelp";
+import TempSlide from "./Components/body-parts/tempCard";
 
 function App() {
   return (
@@ -26,16 +27,17 @@ function App() {
       <ScrollToTop />
       {/* <Temp/> */}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/message-us" element={<SendUsMessage />} />
-        <Route path="/team" element={<OurAwesomTeam />} />
-        <Route path="/help" element={<Help />} />
-        <Route path="/request-help" element={<RequestHelp />} />
-        <Route path="/pages" element={<Body />} />
-        <Route path="/" element={<CarTopology />} />
+        {/* <Route path="/" element={<Home />} /> */}
+        {/* <Route path="/message-us" element={<SendUsMessage />} /> */}
+        {/* <Route path="/team" element={<OurAwesomTeam />} /> */}
+        {/* <Route path="/help" element={<Help />} /> */}
+        {/* <Route path="/request-help" element={<RequestHelp />} /> */}
+        {/* <Route path="/pages" element={<Body />} /> */}
+        {/* <Route path="/" element={<CarTopology />} /> */}
       </Routes>
-      <CarouselBrands />
-      <Footer />
+      {/* <CarouselBrands /> */}
+      {/* <Footer /> */}
+      {/* <TempSlide /> */}
     </div>
   );
 }
