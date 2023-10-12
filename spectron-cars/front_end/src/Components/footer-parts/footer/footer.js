@@ -1,15 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
-
+import logo from "../../../images/static-parts/logo.png";
 export default function Footer() {
   return (
     <div>
       <div className="main_in_footer">
         <div className="nav_main_in_footer">
           <div className="nav_left_in_footer">
-            <img id="logo" src="" alt="" />
-            <h3 id="name_in_footer">Spectron Cars</h3>
+            <img id="logo" src={logo} alt="" />
           </div>
           <div className="nav_right_in_footer">
             <ul className="nav-ul">

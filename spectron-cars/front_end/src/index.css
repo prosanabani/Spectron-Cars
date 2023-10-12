@@ -153,7 +153,11 @@ body {
   display: flex;
 }
 
-.nav-main .nav-left #logo {
+#logo {
+  width: 450px;
+}
+.nav_left_in_footer #logo {
+  margin-inline-start: 50px;
 }
 
 .nav-main .nav-left #name {
@@ -1089,3 +1093,69 @@ select {
   background-color: #092741;
 }
 /* ////////////////////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////dashoard///////////////////// */
+
+.dashboard {
+  width: 80%;
+  background-color: #f9f9f9;
+  padding: 50px;
+  margin: 20px auto;
+}
+
+.dashboard .title {
+  color: #59c89b;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.dsheboard_in_form {
+  padding: 20px;
+  background-color: white;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dsheboard_in_form label {
+  font-size: 15px;
+  margin-right: 20px;
+  color: #5f6973;
+}
+
+.dsheboard_in_form div input {
+  text-indent: 10px;
+  /* width: 50%; */
+  /* width: 150px; */
+  width: 100%;
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 1px solid #59c89b;
+  border-radius: 5px;
+}
+
+.dsheboard_in_form div input:focus {
+  border: none;
+  outline: 1px solid #59c89b;
+}
+
+.dsheboard_in_form button {
+  background-color: #59c89b;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  /* margin-top: 13%; */
+}
+
+.dsheboard_in_form div {
+  /* background-color: red; */
+  width: calc(50% - 20px);
+}
