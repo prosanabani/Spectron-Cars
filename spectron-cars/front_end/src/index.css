@@ -32,7 +32,7 @@ body {
   border-bottom-left-radius: 20px;
   z-index: 9999999;
   padding: 0 50px;
-  margin-inline-start: 1.3vw;
+  margin-inline-start: 1.5vw;
   padding-bottom: 10px;
   color: white;
 }
@@ -941,24 +941,44 @@ body {
 
 /* ///////////requesthelp//////////// */
 
-.containter_in_service {
-  background-color: #f9f9f9;
+.container_in_service {
+  background-color: #0a2357;
   padding: 50px;
+  border-radius: 20px;
+  margin: 0 1.5vw;
+}
+.container_in_service .heading {
+  color: white;
+  font-weight: 600;
+  position: relative;
+  width: fit-content;
+  /* background-color: #092741; */
+  margin-bottom: 30px;
+}
+.container_in_service .heading::after {
+  content: "";
+  position: absolute;
+  background-color: #59c89b;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
 }
 
-.containter_in_service p {
+.container_in_service p {
   /* padding: 30px; */
   color: #5f6973;
   margin-bottom: 20px;
 }
 
-.containter_in_service .row {
+.container_in_service .row {
   display: flex;
 }
 
 .service_form {
   width: 80%;
   background-color: white;
+  border-radius: 5px;
   padding: 50px;
 }
 
@@ -975,7 +995,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
 }
 
 .fomr_in_service label {
@@ -997,9 +1017,13 @@ select {
   padding: 10px 0px;
   margin-bottom: 20px;
   margin-right: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   border: 1px solid #59c89b;
   border-radius: 5px;
+}
+#mechanic_input {
+  color: gray;
+  background-color: transparent;
 }
 
 .service_form .fomr_in_service div button {
@@ -1010,14 +1034,14 @@ select {
   border-radius: 5px;
   cursor: pointer;
   width: 100%;
-  margin-top: 13%;
+  margin-top: 37px;
 }
 
 .service_form .fomr_in_service div {
   /* background-color: red; */
   width: calc(50% - 20px);
 }
-
+/* /////////////////////////////////////////////////// */
 .opening-hours h3 {
   color: #59c89b;
 }

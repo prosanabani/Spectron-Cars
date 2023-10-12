@@ -31,7 +31,7 @@ function App() {
         {/* <Route path="/message-us" element={<SendUsMessage />} /> */}
         {/* <Route path="/team" element={<OurAwesomTeam />} /> */}
         {/* <Route path="/help" element={<Help />} /> */}
-        {/* <Route path="/request-help" element={<RequestHelp />} /> */}
+        <Route path="/request-help" element={<RequestHelp />} />
         {/* <Route path="/pages" element={<Body />} /> */}
         {/* <Route path="/" element={<CarTopology />} /> */}
       </Routes>

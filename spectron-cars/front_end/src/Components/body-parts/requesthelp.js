@@ -1,11 +1,26 @@
 import React from "react";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import * as emailjs from "emailjs-com";
 import { ToastContainer, Zoom, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function RequestHelp() {
   let form = useRef();
+  const [location, setLocation] = useState("");
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setLocation({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+        });
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
+  }, []);
+
   function sendEmail(e) {
     e.preventDefault();
     // Send the email.
@@ -27,11 +42,11 @@ export default function RequestHelp() {
         }
       );
   }
-
+  let userLocation = [location.latitude, location.longitude];
   return (
-    <div className="containter_in_service">
-      <h1>Service</h1>
-      <p>service</p>
+    <div className="container_in_service">
+      <h1 className="heading">Request a Service</h1>
+      <p></p>
       <div className="row">
         <div className="service_form">
           <h5 className="title">will change</h5>
@@ -50,7 +65,7 @@ export default function RequestHelp() {
             <div>
               <label htmlFor="phone">Phone</label>
               <input
-                type="number"
+                type="tel"
                 placeholder="Phone"
                 // value={phone}
                 // onChange={(e) => setPhone(e.target.value)}
@@ -59,8 +74,9 @@ export default function RequestHelp() {
             <div>
               <label htmlFor="mechanic">Mechanic Name</label>
               <select
-              // value={mechanicName}
-              // onChange={(e) => setMechanicName(e.target.value)}
+                id="mechanic_input"
+                // value={mechanicName}
+                // onChange={(e) => setMechanicName(e.target.value)}
               >
                 <option value="">Select Mechanic</option>
                 <option value="John Doe">John Doe</option>
@@ -85,6 +101,9 @@ export default function RequestHelp() {
                 // onChange={(e) => setLocation(e.target.value)}
               />
             </div>
+            {/* ///////////////////// */}
+            <input type="hidden" name="data" value={userLocation}></input>
+            {/* //////////////////////////// */}
             <div>
               <button type="submit">Submit</button>
             </div>
@@ -101,15 +120,18 @@ export default function RequestHelp() {
             <span></span>
             <li>Thursday: 9:00 AM - 5:00 PM</li>
             <span></span>
-            <li>Friday: 9:00 AM - 5:00 PM</li>
+            <li>Friday: Closed</li>
             <span></span>
             <li>Saturday: 10:00 AM - 4:00 PM</li>
             <span></span>
-            <li>Sunday: Closed</li>
+            <li>Sunday: 9:00 AM - 5:00 PM</li>
           </ul>
         </div>
       </div>
-
+      <p>
+        Your current location is: https://www.google.com/maps/?q=
+        {location.latitude}, {location.longitude}
+      </p>
       <ToastContainer
         className={"toast_container"}
         transition={Zoom}
