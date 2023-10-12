@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 export default function RequestHelp() {
   let form = useRef();
   const [location, setLocation] = useState("");
+  console.log(form.current);
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -65,6 +66,7 @@ export default function RequestHelp() {
             <div>
               <label htmlFor="phone">Phone</label>
               <input
+                name="phoneNumber"
                 type="tel"
                 placeholder="Phone"
                 // value={phone}
@@ -75,6 +77,7 @@ export default function RequestHelp() {
               <label htmlFor="mechanic">Mechanic Name</label>
               <select
                 id="mechanic_input"
+                name="mechanicName"
                 // value={mechanicName}
                 // onChange={(e) => setMechanicName(e.target.value)}
               >
@@ -86,6 +89,7 @@ export default function RequestHelp() {
             <div>
               <label htmlFor="email">Email</label>
               <input
+                name="email"
                 type="email"
                 placeholder="Email"
                 // value={email}
@@ -95,15 +99,25 @@ export default function RequestHelp() {
             <div>
               <label htmlFor="location">Location</label>
               <input
+                name="location"
                 type="text"
                 placeholder="Location"
                 // value={location}
                 // onChange={(e) => setLocation(e.target.value)}
               />
             </div>
-            {/* ///////////////////// */}
-            <input type="hidden" name="data" value={userLocation}></input>
-            {/* //////////////////////////// */}
+            {/* ///////////data////////// */}
+            <input
+              type="hidden"
+              name="latitude"
+              value={location.latitude}
+            ></input>
+            <input
+              type="hidden"
+              name="longitude"
+              value={location.longitude}
+            ></input>
+            {/* //////////////data////////////// */}
             <div>
               <button type="submit">Submit</button>
             </div>
