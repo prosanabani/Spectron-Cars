@@ -12,10 +12,10 @@ export default function SendUsMessage() {
     // Send the email.
     emailjs
       .sendForm(
-        "service_duvsrku",
-        "template_50lp9ya",
+        "service_b7qq0jk",
+        "template_lpbsqdt",
         form.current,
-        "5Xzi9Ko5cId9DMOPf"
+        "emaUYDoY-d8CZgIzu"
       )
       .then(
         (response) => {

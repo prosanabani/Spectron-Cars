@@ -496,7 +496,7 @@ body {
 .send-us-main .container .left .left-inputs #send_us_from input {
 }
 
-.send-us-main .container .left .left-inputs #send_us_from select {
+.send-us-main .container .left .left-inputs #send_us_from #message-type {
   color: lightgray;
   font-weight: 300;
 }
@@ -1013,7 +1013,7 @@ body {
 } */
 
 .service_form .fomr_in_service div input,
-select {
+#mechanic_input {
   text-indent: 10px;
   /* width: 50%; */
   /* width: 150px; */
