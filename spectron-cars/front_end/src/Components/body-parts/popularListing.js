@@ -1,7 +1,10 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import "../../index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import popListingData from "./pop-listing-data";
+import axios from "axios"; //(for making HTTP requests)
+import im from "../../images/body-parts/popular-listing/pop-car-1.jpg";
 
 function Cards(props) {
   return (
@@ -72,7 +75,21 @@ function Cards(props) {
   );
 }
 export default function PopularListing() {
-  const Dynamic_card = popListingData.map((items) => <Cards {...items} />);
+  let [cars_data, setCars_data] = useState([]);
+
+  useEffect(() => {
+    let fetchAllCars = async () => {
+      try {
+        let res = await axios.get("http://localhost:8800/cars");
+        console.log(res);
+        setCars_data(res.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchAllCars();
+  }, []);
+  const Dynamic_card = cars_data.map((items) => <Cards {...items} />);
 
   return (
     <div className="popular-main">
