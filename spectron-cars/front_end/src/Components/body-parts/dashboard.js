@@ -1,20 +1,21 @@
 import { faExpandArrowsAlt } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
-// import axios from "axios";
+import axios from "axios";
 
 export default function Dashboard() {
   const [formData, setFormData] = useState({
     name: "",
-    price: "",
-    year: "",
+    price: 0,
+    year: 0,
     transmission: "",
     type: "",
-    reviews: "",
-    rating: "",
+    reviews: 0,
+    rating: 0,
     model: "",
     make: "",
-    mileage: "",
+    mileage: 0,
     condition: "",
+    fueltype: "",
     img: "",
   });
 
@@ -23,26 +24,35 @@ export default function Dashboard() {
     setFormData({ ...formData, [name]: value });
   };
 
+  console.log(formData)
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Insert the data into the database
     // const response = await axios.post("/api/cars", formData);
+    try {
+      await axios.post("http://localhost:8800/cars", formData);
+
+    } catch (err) {
+      console.log(err)
+    }
+
 
     // // Clear the form
     // setFormData({
-    //     price: "",
-    //     year: "",
-    //     name: "",
-    //     transmission: "",
-    //     type: "",
-    //     reviews: "",
-    //     rating: "",
-    //     model: "",
-    //     make: "",
-    //     mileage: "",
-    //     condition: "",
-    //     img: "",
+    //   price: "",
+    //   year: "",
+    //   name: "",
+    //   transmission: "",
+    //   type: "",
+    //   reviews: "",
+    //   rating: "",
+    //   model: "",
+    //   make: "",
+    //   mileage: "",
+    //   condition: "",
+    //   fueltype: "",
+    //   img: "",
     // });
   };
 
@@ -54,18 +64,19 @@ export default function Dashboard() {
           <div>
             <label htmlFor="">Price</label>
             <input
-              type="text"
+              type="number"
               name="price"
               placeholder="Price"
               value={formData.price}
               onChange={handleChange}
+              required
             />
           </div>
 
           <div>
             <label htmlFor="">Year</label>
             <input
-              type="text"
+              type="number"
               name="year"
               placeholder="Year"
               value={formData.year}
@@ -109,7 +120,7 @@ export default function Dashboard() {
           <div>
             <label htmlFor="">Reviwes</label>
             <input
-              type="text"
+              type="number"
               name="reviews"
               placeholder="Reviews"
               value={formData.reviews}
@@ -120,7 +131,7 @@ export default function Dashboard() {
           <div>
             <label htmlFor="">Rating</label>
             <input
-              type="text"
+              type="number"
               name="rating"
               placeholder="Rating"
               value={formData.rating}
@@ -153,7 +164,7 @@ export default function Dashboard() {
           <div>
             <label htmlFor="">mileage</label>
             <input
-              type="text"
+              type="number"
               name="mileage"
               placeholder="Mileage"
               value={formData.mileage}
@@ -171,6 +182,17 @@ export default function Dashboard() {
               onChange={handleChange}
             />
           </div>
+          <div>
+            <label htmlFor="">Fueltype</label>
+            <input
+              type="text"
+              name="fueltype"
+              placeholder="fueltype"
+              value={formData.fueltype}
+              onChange={handleChange}
+            />
+          </div>
+
 
           <div>
             <label htmlFor="">Img</label>
@@ -183,7 +205,7 @@ export default function Dashboard() {
             />
           </div>
 
-          <button type="submit">Submit</button>
+          <button type="submit" onClick={handleSubmit}>Submit</button>
         </form>
       </div>
     </div>

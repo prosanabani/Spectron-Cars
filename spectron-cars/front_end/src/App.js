@@ -14,10 +14,11 @@ import Margin from "./Components/static-parts/margin";
 import OurAwesomTeam from "./Components/body-parts/OurAwesomeTeam/OurAwesomeTeam";
 import Footer from "./Components/footer-parts/footer/footer";
 import Help from "./Components/Pages/help-page/help";
-import CarTopology from "./Components/body-parts/CarTopoloy";
+// import CarTopology from "./Components/body-parts/CarTopoloy";
 import RequestHelp from "./Components/body-parts/requesthelp";
 import TempSlide from "./Components/body-parts/tempCard";
 import Dashboard from "./Components/body-parts/dashboard";
+import Listing from "./Components/body-parts/listing";
 function App() {
   return (
     <div className="app-main">
@@ -33,6 +34,7 @@ function App() {
         <Route path="/help" element={<Help />} />
         <Route path="/request-help" element={<RequestHelp />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/listing" element={<Listing />} />
         {/* <Route path="/pages" element={<Body />} /> */}
         {/* <Route path="/" element={<CarTopology />} /> */}
       </Routes>

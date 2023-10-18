@@ -23,6 +23,33 @@ app.get("/cars", (req, res) => {
   });
 });
 
+app.post('/cars', (req, res) => {
+  let q = " INSERT INTO `vehicles`(`name`, `price`, `year_made`, `transmission`, `type`, `reviews`, `rating`, `model`, `make`, `mileage`, `car_condition`, `img`, `fueltype`) VALUES (?);"
+  let VALUES = [
+    req.body.name,
+    req.body.price,
+    req.body.year,
+    req.body.transmission,
+    req.body.type,
+    req.body.reviews,
+    req.body.rating,
+    req.body.model,
+    req.body.make,
+    req.body.mileage,
+    req.body.condition,
+    req.body.img,
+    req.body.fueltype
+
+  ];
+
+  db.query(q, [VALUES], (err, data) => {
+    if (err) return res.json(err);
+    return res.json('sucsess');
+  })
+
+
+})
+
 app.listen(8800, () => {
   console.log("connected to backend..");
 });
