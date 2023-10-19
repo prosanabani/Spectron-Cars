@@ -1,6 +1,8 @@
 import { faExpandArrowsAlt } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 import axios from "axios";
+import { ToastContainer, Zoom, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Dashboard() {
   const [formData, setFormData] = useState({
@@ -18,49 +20,94 @@ export default function Dashboard() {
     fueltype: "",
     img: "",
   });
+  // const [file, setfile] = useState();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+  // const handelfile = (e) => {
+  //   setfile(e.target.files[0]);
+  // };
 
-  console.log(formData)
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Insert the data into the database
-    // const response = await axios.post("/api/cars", formData);
     try {
-      await axios.post("http://localhost:8800/cars", formData);
-
+      if (
+        formData.name !== "" &&
+        formData.condition !== "" &&
+        formData.fueltype !== "" &&
+        formData.img !== "" &&
+        formData.make !== "" &&
+        formData.mileage !== 0 &&
+        formData.model !== "" &&
+        formData.price !== 0 &&
+        formData.rating !== 0 &&
+        formData.reviews !== 0 &&
+        formData.transmission !== "" &&
+        formData.type !== "" &&
+        formData.year <= 2025
+      ) {
+        await axios.post("http://localhost:8800/cars", formData);
+        toast.success("Car imported Sucessfully");
+        // Clear the form
+        setFormData({
+          price: "",
+          year: "",
+          name: "",
+          transmission: "",
+          type: "",
+          reviews: "",
+          rating: "",
+          model: "",
+          make: "",
+          mileage: "",
+          condition: "",
+          fueltype: "",
+          img: "",
+        });
+      } else {
+        toast.error("Make Sure that you entered the write inputs");
+      }
     } catch (err) {
-      console.log(err)
+      toast.error("failed to import Car");
     }
-
-
-    // // Clear the form
-    // setFormData({
-    //   price: "",
-    //   year: "",
-    //   name: "",
-    //   transmission: "",
-    //   type: "",
-    //   reviews: "",
-    //   rating: "",
-    //   model: "",
-    //   make: "",
-    //   mileage: "",
-    //   condition: "",
-    //   fueltype: "",
-    //   img: "",
-    // });
   };
+  let actualPrice = formData.price;
+  let year_made = formData.year;
+  let mileage = formData.mileage;
+  let currentYear = new Date().getFullYear();
+  let carAge = currentYear - year_made;
+  //calculating the discount
+  let discount = carAge * 0.01 + ((mileage - 50000) / 190000) * 0.025;
+  let DiscountAmount = actualPrice * discount;
+  //calculating the prce after discount
+  let PriceAfterDiscount = actualPrice - DiscountAmount;
+  let FinalPrice = Math.ceil(PriceAfterDiscount / 10) * 10; //rounding to the last digit
+
+  function handelYes() {
+    setFormData({ ...formData, price: FinalPrice });
+  }
+  function handelNo() {
+    setFormData({ ...formData });
+  }
 
   return (
     <div>
       <div className="dashboard">
         <h1 className="title"> Dashboard</h1>
         <form onSubmit={handleSubmit} className="dsheboard_in_form">
+          <div>
+            <label htmlFor="">Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </div>
           <div>
             <label htmlFor="">Price</label>
             <input
@@ -81,17 +128,7 @@ export default function Dashboard() {
               placeholder="Year"
               value={formData.year}
               onChange={handleChange}
-            />
-          </div>
-
-          <div>
-            <label htmlFor="">Name</label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              value={formData.name}
-              onChange={handleChange}
+              required
             />
           </div>
 
@@ -193,7 +230,6 @@ export default function Dashboard() {
             />
           </div>
 
-
           <div>
             <label htmlFor="">Img</label>
             <input
@@ -204,10 +240,36 @@ export default function Dashboard() {
               onChange={handleChange}
             />
           </div>
+          <div>
+            <p>this is the price before discount {formData.price}</p>
+            <p>this is the price after discount {FinalPrice}</p>
+            <button className="yes" type="button" onClick={handelYes}>
+              Yes
+            </button>
+            <button className="no" type="button" onClick={handelNo}>
+              no
+            </button>
+          </div>
 
-          <button type="submit" onClick={handleSubmit}>Submit</button>
+          <button type="submit" onClick={handleSubmit}>
+            Submit
+          </button>
         </form>
       </div>
+      <ToastContainer
+        className={"toast_container"}
+        transition={Zoom}
+        position="top-center"
+        autoClose={1500}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable={false}
+        pauseOnHover
+        theme="light"
+      />
     </div>
   );
 }

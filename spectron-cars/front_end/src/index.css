@@ -60,11 +60,12 @@ body {
   margin-inline-end: 5px;
 }
 
-.header-main .header-right>* {
+.header-main .header-right > * {
   margin-inline-end: 10px;
 }
 
-.header-main .header-right .header-icons {}
+.header-main .header-right .header-icons {
+}
 
 .header-main .header-right .login,
 .register {
@@ -76,9 +77,11 @@ body {
   border-color: #40df9f;
 }
 
-.header-main .header-right .login {}
+.header-main .header-right .login {
+}
 
-.header-main .header-right .register {}
+.header-main .header-right .register {
+}
 
 /* //////////////////////////////////////// */
 
@@ -278,7 +281,8 @@ body {
   padding: 50px;
 }
 
-.pop-card-main {}
+.pop-card-main {
+}
 
 .pop-card-main .container {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
@@ -327,7 +331,7 @@ body {
   /* opacity: 100; */
 }
 
-.pop-card-main .container .upper .zoomed-animation span>* {
+.pop-card-main .container .upper .zoomed-animation span > * {
   margin-right: 5px;
   margin-left: 5px;
 }
@@ -368,7 +372,8 @@ body {
   font-size: 14px;
 }
 
-.pop-card-main .container .mid .price {}
+.pop-card-main .container .mid .price {
+}
 
 .pop-card-main .container .mid .carname-model {
   font-size: 17px;
@@ -387,7 +392,8 @@ body {
   margin-right: 10px;
 }
 
-.pop-card-main .container .mid .spans #p-content {}
+.pop-card-main .container .mid .spans #p-content {
+}
 
 .pop-card-main .container .mid .spans #p-content span {
   color: #2e486e;
@@ -407,7 +413,8 @@ body {
   gap: 10px;
 }
 
-.pop-card-main .container .lower span {}
+.pop-card-main .container .lower span {
+}
 
 .pop-card-main .container .lower #lower-icon {
   margin-right: 5px;
@@ -477,7 +484,7 @@ body {
   gap: 20px;
 }
 
-.send-us-main .container .left .left-inputs #send_us_from>* {
+.send-us-main .container .left .left-inputs #send_us_from > * {
   flex: 1 1 40%;
   color: white;
   width: 100%;
@@ -490,7 +497,8 @@ body {
   border-radius: 10px;
 }
 
-.send-us-main .container .left .left-inputs #send_us_from input {}
+.send-us-main .container .left .left-inputs #send_us_from input {
+}
 
 .send-us-main .container .left .left-inputs #send_us_from #message-type {
   color: lightgray;
@@ -571,7 +579,8 @@ body {
 }
 
 /* /////////////////////////////////// */
-.teamcards-main {}
+.teamcards-main {
+}
 
 .teamcards-main .container {
   position: relative;
@@ -695,7 +704,8 @@ body {
   /* background-color: tomato; */
 }
 
-.teamcards-main .container .pop-up-div .member-name {}
+.teamcards-main .container .pop-up-div .member-name {
+}
 
 .teamcards-main .container .pop-up-div .mem-link-div {
   margin-inline-start: 10px;
@@ -704,7 +714,8 @@ body {
   gap: 10px;
 }
 
-.teamcards-main .container .pop-up-div .mem-link-div #member-links {}
+.teamcards-main .container .pop-up-div .mem-link-div #member-links {
+}
 
 #mimoo {
   background-color: white;
@@ -904,14 +915,14 @@ body {
   transition: 1s;
 }
 
-.icon_in_footer>* {
+.icon_in_footer > * {
   background-color: hsla(0, 0%, 100%, 0.07);
   padding: 10px;
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
 }
 
-.icon_in_footer>*:hover {
+.icon_in_footer > *:hover {
   border: 1px solid #59c89b;
   transform: scale(1.2);
 }
@@ -1159,12 +1170,9 @@ body {
   width: calc(50% - 20px);
 }
 
-
 /* ////Listing//// */
 
-
 .form_in_form {
-
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1185,22 +1193,21 @@ select {
   border-radius: 5px;
 }
 
-.form_in_form input[type='text'] {
+.form_in_form input[type="text"] {
   border: 1px solid #59c89b;
 }
 
-.form_in_form input[type='text']:focus {
+.form_in_form input[type="text"]:focus {
   outline: 1px solid #59c89b;
 }
 
-.form_in_form input[type='number'] {
+.form_in_form input[type="number"] {
   border: 1px solid #59c89b;
 }
 
-.form_in_form input[type='number']:focus {
+.form_in_form input[type="number"]:focus {
   outline: 1px solid #59c89b;
 }
-
 
 .form_in_form input[type="checkbox"] {
   width: 20px;
@@ -1216,7 +1223,6 @@ select {
   margin-right: 10px;
   display: inline-block;
 }
-
 
 .form_in_form button[type="submit"] {
   background-color: #000;
@@ -1238,16 +1244,14 @@ select {
 .form_in_form label {
   display: inline-block;
   margin-bottom: 10px;
-
 }
 
 .container_of_form_popularlisting {
-  background-color: #f9f9f9;
+  background-color: white;
   display: flex;
   flex-direction: row;
   padding: 50px;
   margin: 40px 40px;
-
 }
 
 /* //////////Listing popularListing2//////////// */
@@ -1257,28 +1261,27 @@ select {
   /* background-color: red; */
 }
 
-
-
-
 .popular-main2 .card-container2 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 50px;
   padding: 50px;
 }
 
-/* .pop-card-main {} */
-
+.pop-card-main2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50px;
+}
 
 .pop-card-main2 .container2 {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  background-color: white;
+  /* background-color: red; */
   width: fit-content;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
   cursor: pointer;
-
 }
 
 .pop-card-main2 .container2 .upper2 {
@@ -1293,7 +1296,6 @@ select {
   width: 300px;
   height: 200px;
   transition: 0.5s;
-
 }
 
 .pop-card-main2 .container2 .upper:hover #car-img2 {
@@ -1321,7 +1323,7 @@ select {
   /* opacity: 100; */
 }
 
-.pop-card-main2 .container2 .upper2 .zoomed-animation2 span>* {
+.pop-card-main2 .container2 .upper2 .zoomed-animation2 span > * {
   margin-right: 5px;
   margin-left: 5px;
 }
@@ -1337,8 +1339,8 @@ select {
   color: red;
 }
 
-.pop-card-main2 .container2 .upper2 .featured2 {
-  background-color: #eb6245;
+.featured2 {
+  background-color: #59c89b;
   position: absolute;
   color: white;
   text-transform: uppercase;
@@ -1362,13 +1364,13 @@ select {
   font-size: 14px;
 }
 
-.pop-card-main2 .container2 .mid2 .price2 {}
+.pop-card-main2 .container2 .mid2 .price2 {
+}
 
 .pop-card-main2 .container2 .mid2 .carname-model2 {
   font-size: 17px;
   font-weight: 500;
 }
-
 
 .pop-card-main2 .container2 .mid2 .spans2 {
   display: flex;
@@ -1382,7 +1384,8 @@ select {
   margin-right: 10px;
 }
 
-.pop-card-main2 .container2 .mid2 .spans2 #p-content2 {}
+.pop-card-main2 .container2 .mid2 .spans2 #p-content2 {
+}
 
 .pop-card-main .container .mid .spans #p-content span {
   color: #2e486e;
@@ -1402,7 +1405,8 @@ select {
   gap: 10px;
 }
 
-.pop-card-main2 .container2 .lower2 span {}
+.pop-card-main2 .container2 .lower2 span {
+}
 
 .pop-card-main .container .lower #lower-icon {
   margin-right: 5px;

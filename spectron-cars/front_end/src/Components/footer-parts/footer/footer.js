@@ -12,25 +12,67 @@ export default function Footer() {
           </div>
           <div className="nav_right_in_footer">
             <ul className="nav-ul">
-              <NavLink className="nav-li" to="/">
+              <NavLink
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+                className="nav-li"
+                to="/"
+              >
                 Home
               </NavLink>
-              <NavLink className="nav-li" to="/help">
+              <NavLink
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+                className="nav-li"
+                to="/help"
+              >
                 help
               </NavLink>
-              <NavLink className="nav-li" to="/listing">
+              <NavLink
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+                className="nav-li"
+                to="/listing"
+              >
                 Listing
               </NavLink>
-              <NavLink className="nav-li" to="/blog">
+              <NavLink
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+                className="nav-li"
+                to="/blog"
+              >
                 Blog
               </NavLink>
-              <NavLink className="nav-li" to="/message-us">
+              <NavLink
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+                className="nav-li"
+                to="/message-us"
+              >
                 Send Us Message
               </NavLink>
-              <NavLink className="nav-li" to="/team">
+              <NavLink
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+                className="nav-li"
+                to="/team"
+              >
                 Team
               </NavLink>
-              <NavLink className="nav-li" to="/request-help">
+              <NavLink
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+                className="nav-li"
+                to="/request-help"
+              >
                 Request Help
               </NavLink>
             </ul>
@@ -49,9 +91,16 @@ export default function Footer() {
               <h3 className="header_in_top">Need help</h3>
               <pre>
                 +1 670 936 46 70 <br />
-                <a id="help_page_link" href="#">
+                <NavLink
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
+                  id="help_page_link"
+                  className="nav-li"
+                  to="/request-help"
+                >
                   help@spectron.com
-                </a>
+                </NavLink>
               </pre>
             </div>
             <div className="opening_hours">

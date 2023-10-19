@@ -11,27 +11,69 @@ export default function Nav() {
       </div>
       <div className="nav-right">
         <ul className="nav-ul">
-          <NavLink className="nav-li" to="/">
+          <NavLink
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className="nav-li"
+            to="/"
+          >
             Home
           </NavLink>
-          <NavLink className="nav-li" to="/dashboard">
+          <NavLink
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className="nav-li"
+            to="/dashboard"
+          >
             dashboard
           </NavLink>
-          <NavLink className="nav-li" to="/listing">
+          <NavLink
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className="nav-li"
+            to="/listing"
+          >
             Listing
           </NavLink>
-          <NavLink className="nav-li" to="/blog">
+          {/* <NavLink
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className="nav-li"
+            to="/blog"
+          >
             Blog
-          </NavLink>
-          <NavLink className="nav-li" to="/message-us">
+          </NavLink> */}
+          <NavLink
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className="nav-li"
+            to="/message-us"
+          >
             Send Us Message
           </NavLink>
-          <NavLink className="nav-li" to="/team">
+          <NavLink
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className="nav-li"
+            to="/team"
+          >
             Team
           </NavLink>
         </ul>
         <button className="nav-add-listing">
-          <NavLink className="nav-li " to="/request-help">
+          <NavLink
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className="nav-li "
+            to="/request-help"
+          >
             Request Help
           </NavLink>
         </button>

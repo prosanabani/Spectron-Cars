@@ -50,7 +50,7 @@ export default function RequestHelp() {
       <p></p>
       <div className="row">
         <div className="service_form">
-          <h5 className="title">will change</h5>
+          <h5 className="title">What help do you need</h5>
           <form ref={form} className="fomr_in_service" onSubmit={sendEmail}>
             <div>
               <label htmlFor="name">Name</label>
@@ -142,10 +142,10 @@ export default function RequestHelp() {
           </ul>
         </div>
       </div>
-      <p>
+      {/* <p>
         Your current location is: https://www.google.com/maps/?q=
         {location.latitude}, {location.longitude}
-      </p>
+      </p> */}
       <ToastContainer
         className={"toast_container"}
         transition={Zoom}

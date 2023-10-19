@@ -27,7 +27,7 @@ function Cards(props) {
               <FontAwesomeIcon icon="fa-solid fa-heart" />
             </span>
           </div>
-          <div className="featured">Featured</div>
+          <div className="featured2">Featured</div>
         </div>
         <div className="mid">
           <h3 className="price">
@@ -59,7 +59,7 @@ function Cards(props) {
         <div className="lower">
           <span>
             <FontAwesomeIcon id="lower-icon" icon="fa-solid fa-road" />
-            {props.milage}
+            {props.mileage}
           </span>
           <span>
             <FontAwesomeIcon id="lower-icon" icon="fa-solid fa-gear" />
@@ -67,7 +67,7 @@ function Cards(props) {
           </span>
           <span>
             <FontAwesomeIcon id="lower-icon" icon="fa-solid fa-gas-pump" />
-            {props.fuelType}
+            {props.fueltype}
           </span>
         </div>
       </div>
@@ -89,7 +89,9 @@ export default function PopularListing() {
     };
     fetchAllCars();
   }, []);
-  const Dynamic_card = cars_data.map((items) => <Cards {...items} />);
+  const Dynamic_card = cars_data
+    .map((items) => <Cards {...items} />)
+    .slice(0, 4);
 
   return (
     <div className="popular-main">
