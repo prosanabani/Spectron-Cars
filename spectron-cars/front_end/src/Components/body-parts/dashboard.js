@@ -243,12 +243,14 @@ export default function Dashboard() {
           <div>
             <p>this is the price before discount {formData.price}</p>
             <p>this is the price after discount {FinalPrice}</p>
-            <button className="yes" type="button" onClick={handelYes}>
-              Yes
-            </button>
-            <button className="no" type="button" onClick={handelNo}>
-              no
-            </button>
+            <div className="mini_btn_container">
+              <button className="yes" type="button" onClick={handelYes}>
+                Yes
+              </button>
+              <button className="no" type="button" onClick={handelNo}>
+                no
+              </button>
+            </div>
           </div>
 
           <button type="submit" onClick={handleSubmit}>

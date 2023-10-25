@@ -1108,7 +1108,8 @@ body {
 
 .dashboard {
   width: 80%;
-  background-color: #f9f9f9;
+  background-color: #2e486e;
+  border-radius: 25px;
   padding: 50px;
   margin: 20px auto;
 }
@@ -1122,6 +1123,7 @@ body {
 .dsheboard_in_form {
   padding: 20px;
   background-color: white;
+  border-radius: 25px;
   border: none;
   display: flex;
   flex-wrap: wrap;
@@ -1232,11 +1234,22 @@ select {
   padding: 10px;
   border-radius: 7px;
 }
+.mini_btn_container {
+  /* background-color: #092741; */
+  display: flex;
+  gap: 50px;
+}
+.dsheboard_in_form .yes {
+  background-color: #40df9f;
+}
+.dsheboard_in_form .no {
+  background-color: red;
+}
 
 /* .form_in_form button[type="submit"]:hover {
   background-color: red;
 } */
-
+/* /////////////////////////////////////////////////////////// */
 .search_icon {
   margin-right: 10px;
 }

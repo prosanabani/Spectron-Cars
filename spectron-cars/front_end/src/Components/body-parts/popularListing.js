@@ -4,7 +4,6 @@ import "../../index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import popListingData from "./pop-listing-data";
 import axios from "axios"; //(for making HTTP requests)
-import im from "../../images/body-parts/popular-listing/pop-car-1.jpg";
 
 function Cards(props) {
   return (

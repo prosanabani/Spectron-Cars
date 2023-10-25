@@ -26,9 +26,9 @@ export default function Footer() {
                   window.scrollTo(0, 0);
                 }}
                 className="nav-li"
-                to="/help"
+                to="/dashboard"
               >
-                help
+                dashboard
               </NavLink>
               <NavLink
                 onClick={() => {
@@ -39,15 +39,15 @@ export default function Footer() {
               >
                 Listing
               </NavLink>
-              <NavLink
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }}
-                className="nav-li"
-                to="/blog"
-              >
-                Blog
-              </NavLink>
+              {/* <NavLink
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+            className="nav-li"
+            to="/blog"
+          >
+            Blog
+          </NavLink> */}
               <NavLink
                 onClick={() => {
                   window.scrollTo(0, 0);
@@ -65,15 +65,6 @@ export default function Footer() {
                 to="/team"
               >
                 Team
-              </NavLink>
-              <NavLink
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }}
-                className="nav-li"
-                to="/request-help"
-              >
-                Request Help
               </NavLink>
             </ul>
           </div>
