@@ -22,6 +22,7 @@ function App() {
     <div className="app-main">
       <TopPart />
       <Margin />
+
       <ScrollToTop />
       {/* <Temp />   */}
       {/* <Discount_temp /> */}
