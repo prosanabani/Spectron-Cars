@@ -27,6 +27,7 @@ function App() {
       {/* <Temp />   */}
       {/* <Discount_temp /> */}
       <Routes>
+        {/* temp commenting */}
         <Route path="/" element={<Home />} />
         <Route path="/message-us" element={<SendUsMessage />} />
         <Route path="/team" element={<OurAwesomTeam />} />
