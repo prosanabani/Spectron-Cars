@@ -8,9 +8,9 @@ import CarouselBrands from "./Components/body-parts/CarouselBrands/CarouselBrand
 import ScrollToTop from "./Components/static-parts/scrolltotop";
 import TopPart from "./Components/static-parts/top-part/topPart";
 import Home from "./Components/Pages/home";
-import SendUsMessage from "./Components/body-parts/SendUsMessage";
+import SendUsMessage from "./Components/Pages/SendUsMessage";
 import Margin from "./Components/static-parts/margin";
-import OurAwesomTeam from "./Components/body-parts/OurAwesomeTeam/OurAwesomeTeam";
+import OurAwesomTeam from "./Components/Pages/OurAwesomeTeam";
 import Footer from "./Components/footer-parts/footer/footer";
 // import CarTopology from "./Components/body-parts/CarTopoloy";
 import RequestHelp from "./Components/body-parts/requesthelp";
